@@ -1,0 +1,87 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100vw;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 39px;
+  margin-top: 130px;
+  margin-bottom: 0px;
+  width: fit-content;
+  margin-left: 10vw;
+}
+
+h1 {
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+
+  font-size: 105px;
+  line-height: 75px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1em;
+
+  width: fit-content;
+  margin-left: 10vw;
+}
+
+.typewriter {
+  border-right: 2px solid rgb(var(--theme-color));
+  height: fit-content;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  width: fit-content;
+  animation-name: caretEffect;
+  animation-duration: 4s;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  margin-left: 10vw;
+
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 80px;
+  letter-spacing: 0.15em;
+  text-align: left;
+  width: 250px;
+
+  width: fit-content;
+}
+
+h2:after {
+  content: "Student/Dev/Engineer";
+}
+
+p {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 100;
+  font-size: 25px;
+  line-height: 56px;
+  margin-left: 10vw;
+  width: 70vw;
+  min-height: 175px;
+  margin-bottom: 200px;
+}
+
+#socials {
+  height: 50px;
+  width: fit-content;
+  margin-left: 10vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+hr {
+  width: 80vw;
+}
