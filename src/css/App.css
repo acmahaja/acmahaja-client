@@ -52,7 +52,7 @@ body {
   left: 40vh;
   width: 100vw;
   height: 100vw;
-  background-image: url("../images/Coloured-Cloud.png");
+  background-image: url("https://res.cloudinary.com/www-acmahaja-com/image/upload/v1657613365/acmahaja.com/Coloured-Cloud_cfd1zz.webp");
   background-size: cover;
   background-position: 0;
   z-index: -1;
@@ -70,7 +70,7 @@ body {
 
 .App h1 {
   font-family: "Raleway", sans-serif;
-  font-size: 105px;
+  font-size: 90px;
   font-weight: 700;
   line-height: 123px;
   letter-spacing: 0.1em;
@@ -82,7 +82,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 25px;
   font-weight: 600;
-  line-height: 29px;
+  line-height: 45px;
   letter-spacing: 0.1em;
   text-align: left;
   color: white;
@@ -100,6 +100,7 @@ body {
 
 .App p span:hover{
     color: #38BDF8;
+    cursor: pointer;
 }
 
 .App p span{
@@ -107,7 +108,7 @@ body {
   align-items: center;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 940px) {
   .App {
     padding: 5em;
   }
@@ -131,7 +132,7 @@ body {
 }
 
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 550px) {
   .App {
     padding: 3em;
   }
@@ -142,8 +143,8 @@ body {
 
   }
   .App h1 {
-    font-size: 3.25em;
-    line-height: 2em;
+    font-size: 3.5em;
+    line-height: 1em;
 
   }
 
@@ -151,6 +152,10 @@ body {
     font-size: 1.5em;
     line-height: 2em;
     position: fixed;
-    bottom: 5em;
+    bottom: 2em;
+  }
+
+  .cloudBlur {
+    display: none;
   }
 }
