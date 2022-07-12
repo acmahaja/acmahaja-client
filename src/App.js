@@ -1,71 +1,29 @@
-import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import NoMatch from "./NoMatch";
-import Home from "./pages/Home";
-import Navbar from "./Components/Navbar";
-import Settings from "./Components/Settings";
-
+import React from "react";
+import {AiFillGithub} from "react-icons/ai"
 import "./css/App.css";
-import "./css/Dark.css";
-import "./css/Light.css";
+import "./css/building-blocks.css";
 
-import { appConfig } from "./Config";
 
 const App = () => {
-  const [darkMode, setDarkMode] = useState(
-    JSON.parse(localStorage.getItem("darkMode")) || "true"
-  );
 
-  const [color, setColor] = useState(
-    JSON.parse(localStorage.getItem("color")) || "135, 57, 250"
-  );
-
-  const [hideSettings, toggleSettings] = useState(false);
-
-  useEffect(() => {
-    localStorage.setItem("darkMode", JSON.stringify(darkMode));
-    localStorage.setItem("color", JSON.stringify(color));
-  });
-
-  const showSettings = () => {
-    var toggle = !hideSettings
-    toggleSettings(toggle);
-  };
-
-  const toggleDarkMode = () => {
-    setDarkMode(darkMode === "true" ? "false" : "true");
-  };
-
-  const updateColor = (newColor) => {
-    setColor(newColor);
-  };
-
-  const randomColor = () => {
-    console.log("randomColor");
-    updateColor(
-      `${Math.floor(Math.random() * 155) + 100},
-      ${Math.floor(Math.random() * 155) + 100}, 
-      ${Math.floor(Math.random() * 155) + 100}`
-    );
-  };
+  const goToRepo = () => {
+    console.log("asd");
+    window.location.href = "https://github.com/acmahaja/acmahaja.com"
+    // return null
+  }
 
   return (
-    <div className={`App ${darkMode === "true" ? "Dark" : "Light"}`}>
-      <Router>
-        <Navbar color={color} showSettings={showSettings} />
-        <Settings
-          toggleDarkMode={toggleDarkMode}
-          updateColor={updateColor}
-          currColor={color}
-          randomColor={randomColor}
-          colorList={appConfig.colorList}
-          toggleSettings={hideSettings}
-        />
-        <Routes>
-          <Route index element={<Home toggleDarkMode={toggleDarkMode} />} />
-          <Route path="*" element={<NoMatch />} />
-        </Routes>
-      </Router>
+    <div className="App">
+      <div className="cloudBlur" />
+      <h2>Hi, my name is ...</h2>
+      <h1>Anjaney C Mahajan</h1>
+      <p>
+        I am overhauling my personal website, track my progress here on
+        <span onClick={goToRepo}>
+            Github 
+            <AiFillGithub size={35}/>
+        </span>
+      </p>
     </div>
   );
 };
