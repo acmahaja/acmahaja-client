@@ -1,9 +1,13 @@
 .Light {
-  background-color: white;
+  background-color: #efece3;
+  background-image: url("../images/dots.png");
+  background-size: contain;
+  background-size: 25px;
+
 }
 
 .Light header {
-  background: #f6f8ff;
+  background: #e3decf;
   border-bottom-color: #e6e6e6;
 }
 
