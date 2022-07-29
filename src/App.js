@@ -32,6 +32,10 @@ const App = () => {
     toggleSettings(toggle);
   };
 
+  const showShowSettings = () => {
+    toggleSettings(false)
+  }
+
   const toggleDarkMode = () => {
     setDarkMode(darkMode === "true" ? "false" : "true");
   };
@@ -60,6 +64,7 @@ const App = () => {
           randomColor={randomColor}
           colorList={appConfig.colorList}
           toggleSettings={hideSettings}
+          setViewSettings={showShowSettings}
         />
         <Routes>
           <Route index element={<Home toggleDarkMode={toggleDarkMode} />} />

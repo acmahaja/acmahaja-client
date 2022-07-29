@@ -8,7 +8,8 @@ const Settings = ({
   colorList,
   currColor,
   updateColor,
-  toggleSettings
+  toggleSettings,
+  setViewSettings
 }) => {
   const [checked, setChecked] = useState(false);
 
@@ -16,11 +17,12 @@ const Settings = ({
     setChecked(!checked);
     toggleDarkMode();
   };
-  console.log(toggleSettings);
+
   return (
     <div
       id="settings"
       className={`useBorderBox ${!toggleSettings? "hide" : "show"}`}
+      onMouseLeave={setViewSettings}
     >
       <h5 className="useBorderBox">Settings</h5>
       <label id="toggle-switch">
