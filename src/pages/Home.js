@@ -13,8 +13,12 @@ import { BsInstagram } from 'react-icons/bs';
 
 const Home = () => {
   return (
-    <main className="useBorderBox">
-    </main>
+    <section id="welcome" className="useBorderBox">
+      <h4>Hi, my name is ...</h4>
+      <h1>Anjaney C Mahajan</h1>
+
+    </section>
+
   );
 };
 
