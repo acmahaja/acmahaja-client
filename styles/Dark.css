@@ -1,6 +1,6 @@
 .Dark {
   background-color: #111111;
-  background-image: url("../images/grid.png");
+  background-image: url("../public/grid.png");
   background-size: contain;
   background-size: 550px;
 }

@@ -3,6 +3,11 @@
     --theme-color: 240,240,240;
 }
 
+html,body {
+    margin: 0px;
+    padding: 0px;
+}
+
 .App {
     width: 100vw;
     height: 100vh;

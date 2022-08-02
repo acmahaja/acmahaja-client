@@ -1,4 +1,4 @@
-header {
+.header {
   width: 100%;
   height: 72px;
   border-bottom: 4px solid;
@@ -9,7 +9,7 @@ header {
   position: absolute;
 }
 
-header .Highlight {
+.Highlight {
   width: 100%;
   height: 7px;
   background: linear-gradient(
@@ -20,7 +20,7 @@ header .Highlight {
     white;
 }
 
-header nav {
+.nav {
   height: 65px;
   width: 100%;
   padding: 0px 30px;
@@ -37,7 +37,7 @@ header nav {
   -o-box-sizing: border-box;
 }
 
-nav a {
+.nav a {
   text-decoration: none;
   color: white;
   display: flex;
@@ -45,7 +45,7 @@ nav a {
   align-items: center;
 }
 
-nav a#Logo {
+.nav a#Logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -75,7 +75,7 @@ nav a#Logo {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-nav ul {
+.nav ul {
   width: 500px;
   display: flex;
   flex-direction: row;
@@ -83,7 +83,7 @@ nav ul {
   align-items: center;
 }
 
-nav ul a {
+.nav ul a {
   height: 100%;
   font-family: "Roboto Mono", monospace;
   font-style: normal;
@@ -94,29 +94,28 @@ nav ul a {
   padding: 7px 10px;
 }
 
-nav ul a.active {
+.nav ul a.active {
   border-radius: 5px;
 }
 
 @keyframes colorHover {
   from {
-    background-color: rgba(var(--theme-color),0);
+    background-color: rgba(var(--theme-color), 0);
   }
 
   100% {
-    background-color: rgba(var(--theme-color),1);
+    background-color: rgba(var(--theme-color), 1);
   }
 }
 
-
-nav ul a:hover {
+.nav ul a:hover {
   color: white;
   background-color: rgba(var(--theme-color), 1);
   animation-name: colorHover;
   animation-duration: 300ms;
 }
 
-nav ul a.active:hover {
+.nav ul a.active:hover {
   background-color: rgba(var(--theme-color), 1);
   color: white;
   animation-name: colorHover;
@@ -126,7 +125,6 @@ nav ul a.active:hover {
 #settingsIcon {
   margin-left: 10px;
 }
-
 
 #settingsIcon:hover {
   background-color: rgba(var(--theme-color), 1);
@@ -140,9 +138,8 @@ nav ul a.active:hover {
   animation-duration: 300ms;
 }
 
-
-@media screen and (max-width:700px) {
-  header {
+@media screen and (max-width: 700px) {
+  .header {
     flex-direction: column-reverse;
     outline: none;
     border: none;
@@ -150,11 +147,11 @@ nav ul a.active:hover {
     bottom: 0rem;
   }
 
-  nav {
+  .nav {
     padding: 0px 5px !important;
   }
 
-  nav ul a {
+  .nav ul a {
     font-size: 13px;
     padding: 5px 5px;
   }
@@ -162,7 +159,7 @@ nav ul a.active:hover {
   #Logo {
     display: none;
   }
-  nav ul {
+  .nav ul {
     padding: 0px;
     width: 100%;
   }

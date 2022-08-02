@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-// import "../css/Navbar.css";
+import styles from "../styles/Navbar.module.css";
 import { FiSettings } from "react-icons/fi";
 
 import Link from "next/link";
@@ -10,9 +10,9 @@ const Navbar = ({ color, currPage, showSettings }) => {
   });
 
   return (
-    <header>
-      <div className="Highlight"></div>
-      <nav>
+    <header className={styles.header}>
+      <div className={styles.Highlight}></div>
+      <nav className={styles.nav}>
         <Link href="/" id="Logo">
           <>
             <span>/</span>acmahaja
