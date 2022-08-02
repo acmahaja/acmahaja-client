@@ -1,6 +1,6 @@
 {
-  "name": "acmahaja",
-  "short_name": "acmahaja",
+  "name": "{{ name }}",
+  "short_name": "{{ name }}",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",

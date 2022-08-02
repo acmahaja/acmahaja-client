@@ -1,4 +1,4 @@
-# acmahaja
+# {{ name }}
 
 ## CLI Commands
 
