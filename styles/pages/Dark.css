@@ -1,0 +1,17 @@
+.Dark h1 {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.Dark h2 {
+    color: #888888;
+
+}
+
+.Dark p {
+    color: white;
+}
+
+.Dark hr {
+    border: none;
+    border-top: 1px solid #d9d9d972;
+}

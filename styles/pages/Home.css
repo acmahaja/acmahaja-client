@@ -1,0 +1,11 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+#welcome {
+  margin-top: 80px;
+  padding: 180px 188px 25px 188px;
+}
